@@ -1,0 +1,85 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --card-bg: #f9f9f9;
+    --input-bg: #ffffff;
+    --border: #ddd;
+    --shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212;
+      --text: #ffffff;
+      --card-bg: #1e1e1e;
+      --input-bg: #2a2a2a;
+      --border: #333;
+      --shadow: rgba(255, 255, 255, 0.05);
+    }
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  input,
+  textarea {
+    background-color: var(--input-bg);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+    margin-bottom: 10px;
+    resize: vertical;
+    height: auto;
+    overflow-y: auto;
+    }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #0070f3;
+    outline: none;
+  }
+  
+  fieldset {
+    background: var(--card-bg);
+    box-shadow: 0 4px 10px var(--shadow);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  
+  button {
+    background: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: background 0.2s ease;
+  }
+  
+  button:hover {
+    background: #005dc1;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+
+  input:-webkit-autofill, textarea:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px var(--input-bg) inset !important;
+  -webkit-text-fill-color: var(--text) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+  
